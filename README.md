@@ -1,8 +1,8 @@
 # 🏋️‍♂️ Systemic Analysis of Personalized Gym Routines
 
-[![Java Version](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
-[![Maven](https://img.shields.io/badge/Maven-3.8.1-blue.svg)](https://maven.apache.org/)
-[![JavaFX](https://img.shields.io/badge/JavaFX-17-green.svg)](https://openjfx.io/)
+[![Java Version](https://img.shields.io/badge/Java-22-orange.svg)](https://www.oracle.com/java/)
+[![Maven](https://img.shields.io/badge/Maven-3.9.9-blue.svg)](https://maven.apache.org/)
+[![JavaFX](https://img.shields.io/badge/JavaFX-23.0.1-green.svg)](https://openjfx.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A comprehensive systemic analysis of personalized gym routines, combining simulation modeling, academic research, and practical implementation. This project explores the dynamics of workout routine design and adaptation through various computational approaches.
