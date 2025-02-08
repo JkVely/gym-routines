@@ -9,15 +9,15 @@ A comprehensive systemic analysis of personalized gym routines, combining simula
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Documentation](#-documentation)
+- [Authors](#-authors)
+- [Acknowledgments](#-acknowledgments)
 
 ## 🎯 Overview
 
