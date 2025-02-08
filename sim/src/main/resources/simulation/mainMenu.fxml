@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="simulation.controller.MainMenuController" stylesheets="@styles/mainMenu.css">
+    <left>
+        <Rectangle styleClass="accent-bar" />
+    </left>
+    <center>
+        <VBox styleClass="main-content">
+            <HBox styleClass="card">
+                <GridPane hgap="20" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="50" />
+                        <ColumnConstraints percentWidth="50" />
+                    </columnConstraints>
+
+                    <!-- Left side - Gym progression icons -->
+                    <VBox GridPane.columnIndex="0" styleClass="icon-container">
+                        <HBox spacing="20" alignment="CENTER">
+                            <VBox alignment="CENTER" styleClass="icon-wrapper">
+                                <StackPane styleClass="icon-background, blue-bg">
+                                    <Text styleClass="icon-text">🏋️ </Text>
+                                </StackPane>
+                                <Label text="Entrenamiento" styleClass="icon-label" />
+                            </VBox>
+                            <Text styleClass="arrow-icon">➚</Text>
+                            <VBox alignment="CENTER" styleClass="icon-wrapper">
+                                <StackPane styleClass="icon-background, red-bg">
+                                    <Text styleClass="icon-text">⏱️ </Text>
+                                </StackPane>
+                                <Label text="Progreso" styleClass="icon-label" />
+                            </VBox>
+                            <Text styleClass="arrow-icon">➚</Text>
+                            <VBox alignment="CENTER" styleClass="icon-wrapper">
+                                <StackPane styleClass="icon-background, green-bg">
+                                    <Text styleClass="icon-text">🏆 </Text>
+                                </StackPane>
+                                <Label text="Logros" styleClass="icon-label" />
+                            </VBox>
+                        </HBox>
+                        <Label text="Simula tu progreso y mantén tu motivación"
+                            styleClass="icon-description" />
+                    </VBox>
+
+                    <!-- Right side - Content -->
+                    <VBox GridPane.columnIndex="1" spacing="20">
+                        <Label text="Gym Motivation Simulation" styleClass="title" />
+                        <Label text="Fitness Progress Analysis Tool" styleClass="subtitle" />
+                        <VBox styleClass="author-info">
+                            <Label text="Author: Juan Carlos Quintero Rubiano" />
+                            <Label text="Student ID: 20232020172" />
+                        </VBox>
+                        <Button fx:id="startButton" text="Start Simulation"
+                            onAction="#handleStartButtonAction" styleClass="start-button" />
+                    </VBox>
+                </GridPane>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

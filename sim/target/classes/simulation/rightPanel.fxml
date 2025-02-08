@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.ikonli.javafx.*?>
+<?import javafx.scene.shape.Line?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" stylesheets="@styles/rightPanel.css"
+    xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="simulation.controller.RightPanelController"
+    styleClass="@styles/rightPanel.css">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label text="Simulation Parameters" styleClass="section-title" />
+
+    <VBox styleClass="parameter-container">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <FontIcon iconLiteral="fas-th" iconSize="16" />
+            <Label text="Grid Size:" styleClass="parameter-label" />
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <TextField fx:id="rowsField" promptText="Rows" styleClass="grid-size-input" />
+            <Label text="x" styleClass="grid-size-label" />
+            <TextField fx:id="colsField" promptText="Columns" styleClass="grid-size-input" />
+        </HBox>
+    </VBox>
+
+    <VBox styleClass="parameter-container">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <FontIcon iconLiteral="fas-users" iconSize="16" />
+            <Label text="Initial State Distribution:" styleClass="parameter-label" />
+        </HBox>
+        <VBox spacing="10">
+            <RadioButton fx:id="exactNumbersRadio" text="Exact Numbers" selected="true"
+                styleClass="distribution-option">
+                <toggleGroup>
+                    <ToggleGroup fx:id="distributionTypeGroup" />
+                </toggleGroup>
+            </RadioButton>
+            <GridPane hgap="10" vgap="5">
+                <Label text="Interested:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="interestedNumberField" promptText="0" GridPane.columnIndex="1"
+                    GridPane.rowIndex="0" styleClass="state-input" />
+
+                <Label text="Gymbro:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="gymbroNumberField" promptText="0" GridPane.columnIndex="1"
+                    GridPane.rowIndex="1" styleClass="state-input" />
+
+                <Label text="Competitive:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="competitiveNumberField" promptText="0" GridPane.columnIndex="1"
+                    GridPane.rowIndex="2" styleClass="state-input" />
+
+                <Label text="Abandoned:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="abandonedNumberField" promptText="0" GridPane.columnIndex="1"
+                    GridPane.rowIndex="3" styleClass="state-input" />
+            </GridPane>
+
+            <RadioButton fx:id="percentageRadio" text="Percentages"
+                toggleGroup="$distributionTypeGroup" styleClass="distribution-option" />
+            <GridPane hgap="10" vgap="5">
+                <Label text="Interested:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="interestedPercentField" promptText="0%" GridPane.columnIndex="1"
+                    GridPane.rowIndex="0" styleClass="state-input" disable="true" />
+
+                <Label text="Gymbro:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="gymbroPercentField" promptText="0%" GridPane.columnIndex="1"
+                    GridPane.rowIndex="1" styleClass="state-input" disable="true" />
+
+                <Label text="Competitive:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="competitivePercentField" promptText="0%" GridPane.columnIndex="1"
+                    GridPane.rowIndex="2" styleClass="state-input" disable="true" />
+
+                <Label text="Abandoned:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="abandonedPercentField" promptText="0%" GridPane.columnIndex="1"
+                    GridPane.rowIndex="3" styleClass="state-input" disable="true" />
+            </GridPane>
+
+            <RadioButton fx:id="centralPersonRadio" text="Central Person State"
+                toggleGroup="$distributionTypeGroup" styleClass="distribution-option" />
+            <ComboBox fx:id="centralPersonStateCombo" promptText="Select state" disable="true" />
+        </VBox>
+    </VBox>
+
+    <Line startX="0" endX="300" styleClass="separator" />
+
+    <Button onAction="#handleInitializeGrid" styleClass="primary-button">
+        <graphic>
+            <HBox spacing="10" alignment="CENTER">
+                <FontIcon iconLiteral="fas-play" iconSize="16" />
+                <Label text="Initialize Grid" />
+            </HBox>
+        </graphic>
+    </Button>
+
+    <HBox alignment="CENTER" spacing="10.0">
+        <Button onAction="#handleStepAction" styleClass="secondary-button">
+            <graphic>
+                <FontIcon iconLiteral="fas-step-forward" iconSize="14" />
+            </graphic>
+        </Button>
+        <Button onAction="#handleStartAutoAction" styleClass="secondary-button">
+            <graphic>
+                <FontIcon iconLiteral="fas-play-circle" iconSize="14" />
+            </graphic>
+        </Button>
+        <Button onAction="#handleStopAutoAction" styleClass="secondary-button">
+            <graphic>
+                <FontIcon iconLiteral="fas-stop-circle" iconSize="14" />
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>

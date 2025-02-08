@@ -1,0 +1,99 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #EBF4FF, #F3E8FF);
+}
+
+.accent-bar {
+    -fx-fill: #7C3AED;
+    -fx-width: 8;
+    -fx-height: 1000;
+}
+
+.main-content {
+    -fx-padding: 32;
+    -fx-alignment: center;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-padding: 32;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 4);
+    -fx-max-width: 1000;
+}
+
+.icon-container {
+    -fx-border-color: #E5E7EB;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-padding: 24;
+    -fx-alignment: center;
+    -fx-spacing: 16;
+}
+
+.icon-background {
+    -fx-min-width: 64;
+    -fx-min-height: 64;
+    -fx-background-radius: 8;
+    -fx-alignment: center;
+}
+
+.blue-bg { -fx-background-color: #60A5FA; }
+.red-bg { -fx-background-color: #F87171; }
+.green-bg { -fx-background-color: #34D399; }
+
+.icon-text {
+    -fx-fill: white;
+    -fx-font-size: 24;
+}
+
+.icon-label {
+    -fx-font-size: 14;
+    -fx-text-fill: #4B5563;
+    -fx-font-weight: bold;
+}
+
+.arrow-icon {
+    -fx-fill: #9CA3AF;
+    -fx-font-size: 24;
+}
+
+.icon-description {
+    -fx-text-fill: #6B7280;
+    -fx-font-size: 14;
+    -fx-padding: 16 0 0 0;
+}
+
+.title {
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4C1D95;
+}
+
+.subtitle {
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+    -fx-text-fill: #2563EB;
+}
+
+.author-info {
+    -fx-background-color: #F9FAFB;
+    -fx-background-radius: 8;
+    -fx-padding: 16;
+    -fx-spacing: 8;
+}
+
+.author-info Label {
+    -fx-text-fill: #4B5563;
+}
+
+.start-button {
+    -fx-background-color: #3B82F6;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-padding: 12 24;
+    -fx-background-radius: 4;
+}
+
+.start-button:hover {
+    -fx-background-color: #2563EB;
+}

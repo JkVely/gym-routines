@@ -1,0 +1,101 @@
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 8;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #191970;
+}
+
+.default-color0.chart-legend-item-symbol {
+    -fx-background-color: #060270, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 0;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #060270;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: #060270, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 0;
+    -fx-padding: 3.5;
+}
+
+.default-color1.chart-legend-item-symbol {
+    -fx-background-color: #FE9900, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 10 L 10 0 L 20 10 L 10 20 Z";
+    /* Diamond shape */
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #FE9900;
+}
+
+.default-color1.chart-line-symbol {
+    -fx-background-color: #FE9900, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 10 L 10 0 L 20 10 L 10 20 Z";
+    /* Diamond shape */
+    -fx-padding: 3.5;
+}
+
+.default-color2.chart-legend-item-symbol {
+    -fx-background-color: #E4080A, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 20 L 10 0 L 20 20 Z";
+    /* Triangle shape */
+}
+
+.default-color2.chart-series-line {
+    -fx-stroke: #E4080A;
+}
+
+.default-color2.chart-line-symbol {
+    -fx-background-color: #E4080A, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 20 L 10 0 L 20 20 Z";
+    /* Triangle shape */
+    -fx-padding: 3.5;
+}
+
+.default-color3.chart-legend-item-symbol {
+    -fx-background-color: #7DDA58, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 0 L 10 20 L 20 0 Z";
+    /* Downward triangle shape */
+}
+
+.default-color3.chart-series-line {
+    -fx-stroke: #7DDA58;
+}
+
+.default-color3.chart-line-symbol {
+    -fx-background-color: #7DDA58, white;
+    -fx-background-insets: 0, 2;
+    -fx-shape: "M 0 0 L 10 20 L 20 0 Z";
+    /* Downward triangle shape */
+    -fx-padding: 3.5;
+}
+
+.default-color4.chart-legend-item-symbol {
+    -fx-background-color: #98F5F9, white;
+    -fx-background-insets: 0, 2;
+}
+
+.default-color4.chart-series-line {
+    -fx-stroke: #98F5F9;
+}
+
+.default-color4.chart-line-symbol {
+    -fx-background-color: #98F5F9, white;
+    -fx-background-insets: 0, 2;
+    -fx-padding: 3.5;
+}
