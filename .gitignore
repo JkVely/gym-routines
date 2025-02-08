@@ -65,8 +65,4 @@ build/**/*
 ############################
 .env
 *.env
-/ChatBot/results/
-
-# Other Docs #
-##############
-*.pdf
+/ChatBot/results/**
