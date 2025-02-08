@@ -121,9 +121,7 @@ Detailed documentation is available in the following formats:
 
 ## 🙏 Acknowledgments
 
-- Francisco Jose de Caldas District University for academic support
-- Research advisors and faculty members
-- Open-source community for various tools and libraries
+- Professor Carlos Andres Sierra Virguez from the Systems Analysis class for his mentorship and guidance.
 
 ## 📄 License
 
