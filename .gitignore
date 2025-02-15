@@ -66,3 +66,5 @@ build/**/*
 .env
 *.env
 /ChatBot/results/**
+/ChatBot/__pycache__/**
+/ChatBot/.logs/**
