@@ -105,8 +105,8 @@ class Chatbot:
         training_args = TrainingArguments(
             output_dir="./results",
             num_train_epochs=5,             # Increase epochs
-            per_device_train_batch_size=2,  # Reduce if memory issues
-            learning_rate=2e-5,            # Slightly higher learning rate
+            per_device_train_batch_size=10,  # Reduce if memory issues
+            learning_rate=2e-4,            # Slightly higher learning rate
             warmup_steps=200,              # More warmup steps
             weight_decay=0.01,
             logging_dir="./logs",
